@@ -33,7 +33,7 @@ var Reset = func{
     var altitude = getprop("/sim/presets/altitude-ft");
 	setprop("controls/gear/nose-wheel-steering", 1);
 	var engines_running = getprop("/sim/presets/engines_running");
-	var park_brake = getprop("/sim/presets/park_brake");
+	var park_brake = getprop("/sim/presets/park_brake") or 0;
 	var gear_down = getprop("/sim/presets/gear_down");
 	var flaps = getprop("/sim/presets/flaps") or 0;
 	
